@@ -34,13 +34,28 @@ p, h1, h2, h3, h4, h5, h6{
     -webkit-backdrop-filter: blur( 8px );
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
-
 .hero{
     background-image: url(images/Desktop_CWD-FHD.jpg)
 }
-.hide, .icon-hide{
-    display: none;
-    transition: all 0.3s ease;
+.toggle-wrapper{
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+.hide{
+    padding-block: 0 !important;
+    max-height: 0 !important;
+}
+.show{
+    max-height: 500px;
+    width: 100%;
+} 
+.icon-hide{
+    position: absolute;
+    left: 1rem;
+    opacity: 0;
+    transform: rotateZ(90deg);
+    transition: all 0.3s linear;
 }
 .ablock{
     display: inline-block;
