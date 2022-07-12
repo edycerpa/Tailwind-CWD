@@ -12,4 +12,4 @@ function toggleC(){
     document.getElementById("toggleC").classList.toggle ("hide");
     document.getElementById("iconA-toggleC").classList.toggle ("icon-hide");
     document.getElementById("iconB-toggleC").classList.toggle ("icon-hide");
-}
+} 
