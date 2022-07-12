@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Cerpa Web Designs - Tailwind practice</title>
+</head>
+<body>
+    <header class="bg-glass sticky top-0 z-50 -mb-16">
+        <div class="container m-auto flex items-center">
+            <div class="img">
+                <img class="w-60 h-auto flex-none py-1" src="images/logo-text.png" alt="">
+            </div>
+            <nav class="menu m-auto">
+                <ul class="flex font-bold uppercase text-sm">
+                    <li class="px-auto py-5 hover:text-white hover:bg-orange-400 active:bg-orange-500 transition-all"><a href="#" class="px-5 py-5 f-ven-500">Inicio</a></li>
+                    <li class="px-auto py-5 hover:text-white hover:bg-orange-400 active:bg-orange-500 transition-all"><a href="#" class="px-5 py-5 f-ven-500">Nosotros</a></li>
+                    <li class="px-auto py-5 hover:text-white hover:bg-orange-400 active:bg-orange-500 transition-all"><a href="#" class="px-5 py-5 f-ven-500">Servicios</a></li>
+                    <li class="px-auto py-5 hover:text-white hover:bg-orange-400 active:bg-orange-500 transition-all"><a href="#" class="px-5 py-5 f-ven-500">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="grid grid-cols-3 text-3xl gap-6">
+                <a href="https://www.facebook.com/cerpawebdesigns"><i class="fa-brands fa-facebook-square social-fb"></i></a>
+                <a href="https://www.linkedin.com/in/cerpa-web-designs/"><i class="fa-brands fa-linkedin social-linkedin"></i></a>
+                <a href="https://wa.me/5213314061159"><i class="fa-brands fa-whatsapp-square social-whatsapp"></i></a>
+            </div>
+        </div>
+    </header>
+    <section class="hero px-2 py-6 lg:p-12 h-screen flex bg-center">
+        <div class="container bg-glass-dark p-8 pb-12 text-center rounded-xl max-w-screen md:w-10/12 lg:w-1/2 xl:w-2/5 my-auto">
+            <h1 class="text-white f-ven-500 text-2xl mb-5 font-bold">
+                LLEVAMOS TU NEGOCIO A INTERNET
+            </h1>
+            <p class="text-white text-lg mb-10">Creamos tu Sitio Web o Tienda en Línea con un diseño profesional, adaptativo a cualquier tipo de dispositivo y al mismo tiempo fácil de usar para tí y para tus clientes.</p>
+            <a class="text-lg f-ven-500 uppercase bg-orange-400 hover:bg-blue-500 active:bg-blue-600 py-3 px-6 font-bold text-white rounded-md border-2 transition-all" href="#servicios">
+                Servicios
+            </a>
+        </div>
+    </section>
+    <section id="servicios" class="pt-16 pb-12 bg-blue-100">
+        <h2 class="uppercase f-ven-700 text-3xl text-center mb-16">Servicios</h2>
+        <div class="container m-auto p-2">
+            <div class="flex flex-col md:flex-row mb-20">
+                <div class="md:w-1/2 px-4 py-8 md:p-12 bg-glass rounded-xl">
+                    <h2 class="text-2xl f-ven-700 text-blue-500 mb-4">PÁGINA WEB</h2>
+                    <p class="text-md mb-8">Diseñamos tu Página Web dinámica que se enfoca en el público objetivo de tu negocio, lo que lleva a tener mas conversiones. No importa si tus clientes entran desde una computadora, tablet o smartphone, tu Página Web se adaptará automaticamente, para que tus clientes tengan una experiencia agradable al visitarla.</p>
+                    <div onclick="toggleA()" class="toggle-wrapper">
+                        <h3 class="toggle-title bg-gray-800 hover:bg-white border border-gray-600 text-white hover:text-gray-800 f-ven-500 py-3 px-4">
+                            <i id="iconA-toggleA" class="icon-pl fa-solid fa-plus text-orange-400 mr-4"></i>
+                            <i id="iconB-toggleA" class="icon-pl icon-hide fa-solid fa-minus text-orange-400 mr-4"></i>
+                            Detalles
+                        </h3>
+                        <div id="toggleA" class="hide transition-all bg-gray-800 text-white px-4 py-12 lg:p-12">
+                            <div class="toggle-p text-white">
+                                <ul>
+                                    <li><span class=" font-bold uppercase">Hosting y Dominio gratis</span>  el primer año.
+                                    </li>
+                                    <li>
+                                        Diseño atractivo y funcional.
+                                    </li>
+                                    <li>
+                                        Auto-administrable.</li>
+                                    <li>
+                                        Correos corporativos.
+                                    </li>
+                                    <li>
+                                        Mapas.
+                                    </li>
+                                    <li>
+                                        Galería de imágenes.
+                                    </li>
+                                    <li>
+                                        Formulario de contacto.
+                                    </li>
+                                    <li>
+                                        Y mucho más…
+                                    </li>
+                                </ul>
+                                <p class="text-white mt-3">
+                                    Contáctanos para cotizar tu nueva <span class="font-bold uppercase">Página Web.</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="bg-orange-400 hover:bg-blue-400 text-white f-ven-500 px-8 py-4 ablock mt-8 transition-all ring- rounded-md ring-2 ring-gray-300">Cotizar</a>
+                </div>
+                <div class="md:w-1/2">
+                    <img class="" src="images/MUG-Mockup.png" alt="">
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row mb-20 md:flex-row-reverse">
+                <div class="md:w-1/2 px-4 py-8 md:p-12 bg-glass rounded-xl">
+                    <h2 class="text-2xl f-ven-700 text-blue-500 mb-4">TIENDA ONLINE</h2>
+                    <p class="text-md mb-8">Tener tu Tienda en Linea, ahora es mas fácil y barato que nunca antes, ya sea que vendas productos físicos o digitales, tener tu propia Tienda en Línea es un impulso gigantesto a tu negocio.</p>
+                    <div id="toggleServiciosB" onclick="toggleB()" class="toggle-wrapper">
+                        <h3 class="toggle-title bg-gray-800 hover:bg-white border border-gray-600 text-white hover:text-gray-800 f-ven-500 py-3 px-4">
+                            <i id="iconA-toggleB" class="icon-show fa-solid fa-plus text-orange-400 mr-4"></i>
+                            <i id="iconB-toggleB" class="icon-hide fa-solid fa-minus text-orange-400 mr-4"></i>
+                            Detalles
+                        </h3>
+                        <div id="toggleB" class="hide transition-all bg-gray-800 text-white px-4 py-12 lg:p-12">
+                            <div>
+                                <ul>
+                                    <li>
+                                        <span class="font-bold uppercase">Hosting y Dominio gratis</span> el primer año.
+                                    </li>
+                                    <li>
+                                        Diseño atractivo y funcional.
+                                    </li>
+                                    <li>
+                                        Sliders.
+                                    </li>
+                                    <li>
+                                        Galería de productos.
+                                    </li>
+                                    <li>
+                                        Diseño responsivo.
+                                    </li>
+                                    <li>
+                                        Boton de WhatsApp y/o Messenger.
+                                    </li>
+                                    <li>
+                                        Chat en línea.
+                                    </li>
+                                    <li>
+                                        Panel de control auto-administrable.
+                                    </li>
+                                    <li>
+                                        Y mucho más…
+                                    </li>
+                                    </ul>
+                                    <p class="text-white mt-3">Contáctanos para cotizar tu nueva<span class="font-bold uppercase"> Tienda en Línea.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="bg-orange-400 hover:bg-blue-400 text-white f-ven-500 px-8 py-4 ablock mt-8 transition-all ring- rounded-md ring-2 ring-gray-300">Cotizar</a>
+                </div>
+                <div class="md:w-1/2">
+                    <img class="" src="images/MUG-Mockup.png" alt="">
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row mb-20">
+                <div class="md:w-1/2 px-4 py-8 md:p-12 bg-glass rounded-xl">
+                    <h2 class="text-2xl f-ven-700 text-blue-500 mb-4">MARKETING DIGITAL</h2>
+                    <p class="text-md mb-8">La campaña publicitaria mejor enfocada que puede haber, ya que tenemos un público objetivo, y en él nos enfocamos; en internet podemos elegír que tipo de personas queremos que vea nuestra publicidad, es por esto que cada peso estará bien invertido.</p>
+                    <div onclick="toggleC()" class="toggle-wrapper">
+                        <h3 class="toggle-title bg-gray-800 hover:bg-white border border-gray-600 text-white hover:text-gray-800 f-ven-500 py-3 px-4">
+                            <i id="iconA-toggleC" class="fa-solid fa-plus text-orange-400 mr-4"></i>
+                            <i id="iconB-toggleC" class="icon-hide fa-solid fa-minus text-orange-400 mr-4"></i>
+                            Detalles
+                        </h3>
+                        <div id="toggleC" class="hide transition-all bg-gray-800 text-white px-4 py-12 lg:p-12">
+                            <ul class="toggle-p text-white">
+                                <span class="font-bold">Campañas publicitarias</span> en:
+                                <ul>
+                                    <li>
+                                        Redes sociales.
+                                    </li>
+                                    <li>
+                                        Google ads.
+                                    </li>
+                                    <li>
+                                        E-mail.
+                                    </li>
+                                    <p class="text-white mt-3">
+                                        A la medida de tus necesidades.
+                                    </p>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#" class="bg-orange-400 hover:bg-blue-400 text-white f-ven-500 px-8 py-4 ablock mt-8 transition-all ring- rounded-md ring-2 ring-gray-300">Cotizar</a>
+                </div>
+                <div class="md:w-1/2">
+                    <img class="" src="images/MUG-Mockup.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="h-screen">
+        <div class="container m-auto">
+            <div class="md:columns-2">
+                <div class="bg-gray-800 h-96 text-white p-12">
+                    <form action="">
+                        <fieldset>
+                            <label for="name">Nombre</label><br>
+                            <input type="text" id="name" name="name"><br>
+                            <label for="email">Email</label><br>
+                            <input type="text" id="email" name="email"><br>
+                            <input class="bg-orange-400 hover:bg-blue-400 text-white f-ven-500 px-8 py-4 ablock mt-8 transition-all ring- rounded-md ring-2 ring-gray-300" type="submit">
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="">
+                    <img class="max-w-sm" src="images/optin-1.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

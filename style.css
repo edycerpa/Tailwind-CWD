@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+@font-face {font-family: 'Venera-300'; src: url("Venera-300.ttf");}
+@font-face {font-family: 'Venera-500'; src: url("Venera-500.ttf");}
+@font-face {font-family: 'Venera-700'; src: url("Venera-700.ttf");}
+html{scroll-behavior: smooth;}
+p, h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+    color: #2a3039 ;
+}
+
+.f-ven-300{
+    font-family: 'Venera-300', sans-serif;
+}
+.f-ven-500{
+    font-family: 'Venera-500', sans-serif;
+}
+.f-ven-700{
+    font-family: 'Venera-700', sans-serif;
+}
+.social-fb{color:#3b5998;}
+.social-linkedin{ color:#0e76a8;}
+.social-whatsapp{ color:#25D366;}
+.bg-glass{
+    background: rgba( 255, 255, 255, 0.5);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8px );
+    -webkit-backdrop-filter: blur( 8px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.bg-glass-dark{
+    background: rgba( 0, 0, 0, 0.5);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8px );
+    -webkit-backdrop-filter: blur( 8px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.hero{
+    background-image: url(images/Desktop_CWD-FHD.jpg)
+}
+.hide, .icon-hide{
+    display: none;
+    transition: all 0.3s ease;
+}
+.icon-pl{
+    
+}
+.ablock{
+    display: inline-block;
+}
+nav>ul>li{
+    list-style: none;
+    margin: 0;
+}
+ul>li{
+    margin-left: 25px;
+    list-style:disc;
+}
