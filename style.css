@@ -45,10 +45,11 @@ p, h1, h2, h3, h4, h5, h6{
 .hide{
     padding-block: 0 !important;
     max-height: 0 !important;
+    transition: all 0.3s linear;
 }
 .show{
     max-height: 500px;
-    width: 100%;
+    transition: all 0.3s linear;
 } 
 .icon-hide{
     position: absolute;
