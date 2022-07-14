@@ -7,7 +7,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <title>Cerpa Web Designs - Tailwind practice</title>
 </head>
 <body>
@@ -43,10 +42,10 @@
         </div>
     </section>
     <section id="servicios" class="pt-16 pb-12 bg-blue-100">
-        <h2 class="uppercase f-ven-700 text-3xl text-center mb-16">Servicios</h2>
+        <h2 class="title-h2 uppercase f-ven-700 text-3xl text-center mb-16">Servicios</h2>
         <div class="container m-auto p-2">
             <div class="flex flex-col md:flex-row mb-20">
-                <div class="md:w-1/2 px-4 py-8 md:p-12 bg-glass rounded-xl box">
+                <div class="md:w-1/2 px-4 py-8 md:p-12 bg-glass rounded-xl box text-left">
                     <h2 class="text-2xl f-ven-700 text-blue-500 mb-4">PÁGINA WEB</h2>
                     <p class="text-md mb-8">Diseñamos tu Página Web dinámica que se enfoca en el público objetivo de tu negocio, lo que lleva a tener mas conversiones. No importa si tus clientes entran desde una computadora, tablet o smartphone, tu Página Web se adaptará automaticamente, para que tus clientes tengan una experiencia agradable al visitarla.</p>
                     <div onclick="toggleA()" class="toggle-wrapper">
@@ -94,7 +93,7 @@
                 </div>
             </div>
             <div class="flex flex-col md:flex-row mb-20 md:flex-row-reverse">
-                <div class="md:w-1/2 px-4 py-8 md:p-12 bg-glass rounded-xl">
+                <div class="text-left md:w-1/2 px-4 py-8 md:p-12 bg-glass rounded-xl">
                     <h2 class="text-2xl f-ven-700 text-blue-500 mb-4">TIENDA ONLINE</h2>
                     <p class="text-md mb-8">Tener tu Tienda en Linea, ahora es mas fácil y barato que nunca antes, ya sea que vendas productos físicos o digitales, tener tu propia Tienda en Línea es un impulso gigantesto a tu negocio.</p>
                     <div id="toggleServiciosB" onclick="toggleB()" class="toggle-wrapper">
@@ -145,7 +144,7 @@
                 </div>
             </div>
             <div class="flex flex-col md:flex-row mb-20">
-                <div class="md:w-1/2 px-4 py-8 md:p-12 bg-glass rounded-xl">
+                <div class="text-left md:w-1/2 px-4 py-8 md:p-12 bg-glass rounded-xl">
                     <h2 class="text-2xl f-ven-700 text-blue-500 mb-4">MARKETING DIGITAL</h2>
                     <p class="text-md mb-8">La campaña publicitaria mejor enfocada que puede haber, ya que tenemos un público objetivo, y en él nos enfocamos; en internet podemos elegír que tipo de personas queremos que vea nuestra publicidad, es por esto que cada peso estará bien invertido.</p>
                     <div onclick="toggleC()" class="toggle-wrapper">
@@ -182,10 +181,10 @@
             </div>
         </div>
     </section>
-    <section class="h-screen">
+    <section class="h-screen cta">
         <div class="container m-auto">
             <div class="md:columns-2">
-                <div class="bg-gray-800 h-96 text-white p-12">
+                <div class="h-96 text-white p-12">
                     <form action="">
                         <fieldset>
                             <label for="name">Nombre</label><br>
@@ -202,5 +201,8 @@
             </div>
         </div>
     </section>
+
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -38,24 +38,30 @@ p, h1, h2, h3, h4, h5, h6{
     background-image: url(images/Desktop_CWD-FHD.jpg)
 }
 .toggle-wrapper{
+    display: flex;
+    flex-direction: column;
     position: relative;
     cursor: pointer;
     overflow: hidden;
 }
+.toggle-title{
+    z-index: 99;
+}
 .hide{
     padding-block: 0 !important;
     max-height: 0 !important;
-    transition: all 0.3s linear;
+    transition: all 0.5s ease-out;
 }
 .show{
+    z-index: 9;
     max-height: 500px;
-    transition: all 0.3s linear;
-} 
+    transition: all 0.5s ease-in;
+}
 .icon-hide{
     position: absolute;
     left: 1rem;
     opacity: 0;
-    transform: rotateZ(90deg);
+    transform:  rotateZ(90deg);
     transition: all 0.3s linear;
 }
 .ablock{
@@ -68,4 +74,31 @@ nav>ul>li{
 ul>li{
     margin-left: 25px;
     list-style:disc;
+}
+#servicios{
+    text-align: center;
+}
+.title-h2{
+    position: relative;
+    display: inline-block;
+}
+.title-h2::after{
+    content: '';
+    position: absolute;
+    bottom:-10px;
+    right: 25%;
+    width: 50%;
+    border-bottom: 3px solid orange;
+}
+.cta{
+    background: linear-gradient(90deg, 
+        rgba(28,28,43,1) 70%,
+        rgba(255,255,255,1) 70%);
+}
+@media (max-width: 768px) {
+    .cta{
+    background: linear-gradient(0deg, 
+        rgba(255,255,255,1) 40%,
+        rgba(28,28,43,1) 40%);
+    }
 }
